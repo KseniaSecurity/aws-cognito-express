@@ -66,6 +66,7 @@ typings/
 
 # Locks
 package-lock.json
+yarn.lock
 
 # jsdoc output
 out/
