@@ -101,11 +101,6 @@ describe('Validator', () => {
       expect(() => new JWTValidator(config)).to.throw(ConfigurationError, /must be a string/)
     })
 
-    it('Should throw ConfigurationError if no audience is passed', () => {
-      Reflect.deleteProperty(config, 'audience')
-      expect(() => new JWTValidator(config)).to.throw(ConfigurationError, /"audience" is required/)
-    })
-
     it('Should throw ConfigurationError if pems is not an object', () => {
       config.pems = chance.natural()
       expect(() => new JWTValidator(config)).to.throw(ConfigurationError, /"pems" must be of type object/)
