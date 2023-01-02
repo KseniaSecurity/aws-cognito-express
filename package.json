@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/buccfer/aws-cognito-express.git"
+    "url": "git+https://github.com/KseniaSecurity/aws-cognito-express.git"
   },
   "keywords": [
     "aws",
